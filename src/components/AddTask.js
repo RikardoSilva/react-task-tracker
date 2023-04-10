@@ -8,11 +8,11 @@ const AddTask = ({ onAdd }) => {
     const onSubmit = (e) => {
         e.preventDefault()
 
-        if(!text) {
+        if (!text) {
             alert('Please add a task before saving')
             return
         }
-        
+
         onAdd({ text, day, reminder })
 
         setText('')
